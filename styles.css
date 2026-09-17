@@ -14,9 +14,9 @@ a { color: inherit; text-decoration: none; }
 .menu-button { display: none; background: none; border: 0; }
 .view { padding: 118px 30px 30px; min-height: 100vh; }
 .view-projects { margin-top: 60px; }
-.project-item.is-open .project-inline { position: relative; min-height: calc(min(68vh, 700px) + 102px); }
-.project-item.is-open .inline-media { position: absolute; top: 43%; left: 50%; width: min(72vw, 920px); transform: translate(-50%, -50%); }
-@media (max-width: 720px) { .project-item.is-open .project-inline { min-height: 0; } .project-item.is-open .inline-media { position: relative; top: 0; left: 0; width: 100%; transform: none; } }
+.project-item.is-open .project-inline { position: relative; min-height: calc(min(82vh, 920px) + 102px); }
+.project-item.is-open .inline-media { position: absolute; top: 43%; left: 50%; width: min(88vw, 1240px); height: min(82vh, 920px); transform: translate(-50%, -50%); }
+@media (max-width: 720px) { .project-item.is-open .project-inline { min-height: 0; } .project-item.is-open .inline-media { position: relative; top: 0; left: 0; width: 100%; height: 52vh; transform: none; } }
 .hero-grid { display: grid; grid-template-columns: .8fr 1.2fr; gap: 7vw; min-height: 675px; align-items: end; }
 .hero-copy { padding: 0 0 42px 10vw; max-width: 560px; }
 .eyebrow, .section-heading, .inner-header, .site-footer, .about-meta, .project-title p, figcaption { font-size: var(--type-small); letter-spacing: .03em; text-transform: uppercase; }
