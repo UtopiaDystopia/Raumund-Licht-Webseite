@@ -35,7 +35,6 @@ function renderSlide(projectId, projectItem, slideIndex) {
   const project = projects[projectId];
   const slide = project.slides[slideIndex];
   const mediaStage = projectItem.querySelector('.inline-media-stage');
-  const counter = projectItem.querySelector('.inline-counter');
   const thumb = projectItem.querySelector('.project-thumb');
   const currentMedia = thumb.querySelector('img, video');
   const mediaTag = slide.type === 'video' ? 'VIDEO' : 'IMG';
@@ -56,7 +55,6 @@ function renderSlide(projectId, projectItem, slideIndex) {
     media.alt = slide.alt;
   }
   if (thumb.parentElement !== mediaStage) mediaStage.appendChild(thumb);
-  counter.textContent = `${String(slideIndex + 1).padStart(2, '0')} / ${String(project.slides.length).padStart(2, '0')}`;
   projectItem.querySelector('.media-prev').disabled = project.slides.length < 2;
   projectItem.querySelector('.media-next').disabled = project.slides.length < 2;
 }
