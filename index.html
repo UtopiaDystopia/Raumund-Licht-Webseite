@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Raum & Licht — Berlin based design studio for objects, spaces and atmospheres." />
+    <title>Raum & Licht — Berlin</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#projects" aria-label="Raum und Licht home">
+        <img src="LOGO/Logo SW.png" alt="Raum und Licht" />
+      </a>
+      <nav class="main-nav" aria-label="Main navigation">
+        <a href="#projects" data-route="projects">Projects</a>
+        <a href="#about" data-route="about">About</a>
+        <a href="#contact" data-route="contact">Contact</a>
+      </nav>
+      <button class="menu-button" aria-label="Open navigation" aria-expanded="false"><span></span><span></span></button>
+    </header>
+
+    <main>
+      <section class="view view-projects" data-view="projects">
+        <div class="project-list">
+          <div class="project-item" data-project-item="utopia">
+            <a class="project-row" href="#project-utopia" data-project="utopia" aria-expanded="false">
+              <div class="project-title"><h2>Utopia / Dystopia</h2><p>Furniture, lighting, 2026</p></div>
+              <div class="project-thumb"><img src="Projekte/Utopia Dystopia/Raumund Licht - Bench (3).jpg" alt="Curved fur-covered bench" /></div>
+            </a>
+            <div class="project-inline" hidden>
+              <div class="inline-copy"><div class="inline-description"></div></div>
+              <div class="inline-media"><div class="inline-media-stage"></div><div class="inline-counter"></div><button class="media-button media-prev" type="button" aria-label="Previous image">‹</button><button class="media-button media-next" type="button" aria-label="Next image">›</button></div>
+            </div>
+          </div>
+          <div class="project-item" data-project-item="bubble">
+            <a class="project-row" href="#project-bubble" data-project="bubble" aria-expanded="false">
+              <div class="project-title"><h2>Bubble Station</h2><p>Spatial installation, 2026</p></div>
+              <div class="project-thumb"><video autoplay muted loop playsinline poster="Projekte/Utopia Dystopia/Raumund Licht - bench and person.jpg"><source src="Projekte/Bubble Station/bubble station flyover.mp4" type="video/mp4" /></video></div>
+            </a>
+            <div class="project-inline" hidden>
+              <div class="inline-copy"><div class="inline-description"></div></div>
+              <div class="inline-media"><div class="inline-media-stage"></div><div class="inline-counter"></div><button class="media-button media-prev" type="button" aria-label="Previous image">‹</button><button class="media-button media-next" type="button" aria-label="Next image">›</button></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="view inner-view" data-view="about" hidden>
+        <div class="simple-page"><p>Aura-driven spatial lighting concepts.<br />Made in Berlin.<br /><br />Initiated by Piet Engel and Leon Remmert.</p></div>
+      </section>
+
+      <section class="view inner-view contact-view" data-view="contact" hidden>
+        <div class="simple-page"><p><a href="mailto:leonremmert1@gmail.com">leonremmert1@gmail.com</a><br /><a href="tel:+4915161631820">+49 15161631820</a></p></div>
+      </section>
+    </main>
+    <div class="cursor-label" aria-hidden="true">View</div>
+  </body>
+</html>
